@@ -1,18 +1,20 @@
 h1 {
-    color: black;
+    color: #3f3f3f;
     display: flex;
     justify-content: center;
 }
 
-#main{
+#container{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
-    background-color: lightblue;
+    align-items: center;
+    background-color: #a8d1ff;
     border-radius: 10px;
     padding-bottom: 5px;
     box-shadow: 1px 1px 8px ;
     width: 50%;
+    margin: auto;
 }
 
 #input-fields{
@@ -20,20 +22,54 @@ h1 {
     justify-content: center;
 }
 
-#itemList{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    width: fit-content;
-    margin: 5px;
-    padding: 5px;
-    gap: 5px;
-
-    :active{
-        background-color: rgb(167, 103, 226);
-    }
-    :hover{
-        background-color: aquamarine;
-    }
+#itemList > h2{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#itemList > button{
+    display: flex;
+    margin-left:auto;
+    margin-right:auto;
+    justify-content: center;
+    outline: 0;
+    cursor: pointer;
+    border: 1;
+    border-color: gray;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 0 56px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 7px;
+    background-color: slategrey;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    box-shadow: 0 4px 14px 0 rgba(68, 68, 68, 0.39);
+
+    
+}
+
+#itemList > button:hover{
+        background-color: palevioletred;
+        border-color: rgb(190, 82, 118);
+        filter: blur();
+}
+
+#addItemButton{
+    margin-left : 8px;
+    border: 1;
+    border-radius: 15px;
+    height: 28px;
+    background-color: lightgreen;
+    border-color: rgb(129, 196, 129);
+    
+}
+#addItemButton:hover{
+        background-color: green;
+}
+#completed-container{
+    display: flex;
+    flex-direction: column;
+}
