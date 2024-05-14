@@ -1,0 +1,39 @@
+h1 {
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: lightblue;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    box-shadow: 1px 1px 8px ;
+    width: 50%;
+}
+
+#input-fields{
+    display: flex;
+    justify-content: center;
+}
+
+#itemList{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: fit-content;
+    margin: 5px;
+    padding: 5px;
+    gap: 5px;
+
+    :active{
+        background-color: rgb(167, 103, 226);
+    }
+    :hover{
+        background-color: aquamarine;
+    }
+}
+
