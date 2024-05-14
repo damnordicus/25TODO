@@ -37,7 +37,6 @@ function addElement (list){
             const instruct = document.getElementById("instruction");
             instruct.parentNode.removeChild(instruct);
         }
-       // localStorage.setItem("tasks", JSON.stringify(list));
     })
     
     // adds the text from the list to the button
@@ -75,19 +74,3 @@ function updateCompletedContainer(item){
     // adds the button to the div list
     document.getElementById("completed-container").appendChild(newItem);
 }
-
-// function loadListFromStorage(){
-//     const storedList = localStorage.getItem("tasks");
-//     if(storedList){
-//         return JSON.parse(storedList);
-//     }else{
-//         return [];
-//     }
-// }
-
-// window.addEventListener("load", function(){
-//     const list = loadListFromStorage();
-//     list.forEach(function(item) {
-//         addElement([item]);
-//     });
-// })
