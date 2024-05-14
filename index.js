@@ -37,7 +37,9 @@ function addElement (list){
             const instruct = document.getElementById("instruction");
             instruct.parentNode.removeChild(instruct);
         }
+       // localStorage.setItem("tasks", JSON.stringify(list));
     })
+    
     // adds the text from the list to the button
     newItem.appendChild(buttonText);
     // adds the button to the div list
@@ -67,9 +69,25 @@ document.getElementById("newItem").addEventListener("keydown", function(e){
 })
 
 function updateCompletedContainer(item){
-    const newItem = document.createElement("li");
+    const newItem = document.createElement("p");
     // makes the text for the button whatever the last items is on the list
     newItem.textContent = item;
     // adds the button to the div list
     document.getElementById("completed-container").appendChild(newItem);
 }
+
+// function loadListFromStorage(){
+//     const storedList = localStorage.getItem("tasks");
+//     if(storedList){
+//         return JSON.parse(storedList);
+//     }else{
+//         return [];
+//     }
+// }
+
+// window.addEventListener("load", function(){
+//     const list = loadListFromStorage();
+//     list.forEach(function(item) {
+//         addElement([item]);
+//     });
+// })
